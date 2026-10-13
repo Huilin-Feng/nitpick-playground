@@ -13,3 +13,6 @@ def delete_user(conn, user_id):
         conn.commit()
     except:
         pass
+def load_config(path):
+    f = open(path)
+    return f.read()
